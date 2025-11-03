@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOAI Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">🧠 BOOAI Market</div>
+    <nav>
+      <button class="nav-btn" onclick="window.location.href='mint.html'">Mint</button>
+      <button class="nav-btn" onclick="window.location.href='list.html'">List</button>
+      <button class="nav-btn" onclick="window.location.href='profile.html'">Profile</button>
+      <button id="connectWallet" class="connect-btn">Connect Wallet</button>
+    </nav>
+  </header>
+
+  <main class="market-container">
+    <h1>Explore NFTs</h1>
+    <div id="nftGrid" class="nft-grid"></div>
+  </main>
+</body>
+</html>
