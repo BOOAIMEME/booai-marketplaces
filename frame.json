@@ -1,16 +1,11 @@
 {
-  "name": "BOOAI Marketplace",
-  "description": "The first Farcaster-native NFT marketplace across Base and Solana.",
-  "icon": "https://booai-marketplaces.vercel.app/logo.png",
-  "url": "https://booai-marketplaces.vercel.app/",
-  "frame": {
-    "title": "BOOAI Marketplace",
-    "image": "https://booai-marketplaces.vercel.app/file_000000063387206bf18bb3201d20c8e.png",
-    "buttons": [
-      { "label": "🪙 Mint NFT", "action": "link", "target": "https://booai-marketplaces.vercel.app/mint.html" },
-      { "label": "💎 View Marketplace", "action": "link", "target": "https://booai-marketplaces.vercel.app/app.html" },
-      { "label": "📤 List NFT", "action": "link", "target": "https://booai-marketplaces.vercel.app/list.html" }
-    ],
-    "post_url": "https://booai-marketplaces.vercel.app/api/frame"
-  }
+  "version": "1.0",
+  "title": "BOOAI Marketplace",
+  "image": "https://booai-marketplaces.vercel.app/file_000000063387206bf18bb3201d20c8e.png",
+  "buttons": [
+    { "label": "🪙 Mint NFT" },
+    { "label": "💎 Marketplace", "action": "link", "target": "https://booai-marketplaces.vercel.app/app.html" },
+    { "label": "📤 List NFT", "action": "link", "target": "https://booai-marketplaces.vercel.app/list.html" }
+  ],
+  "post_url": "https://booai-marketplaces.vercel.app/api/frame-v2"
 }
