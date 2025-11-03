@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOAI Marketplace</title>
+  <script src="https://unpkg.com/@farcaster/miniapp-sdk@latest/dist/miniapp.umd.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="BOOAI Logo" class="logo" />
+    <h1>Welcome to BOOAI Marketplace</h1>
+    <p>The first Farcaster-native NFT marketplace on Base & Solana</p>
+
+    <div class="buttons">
+      <button onclick="window.location.href='mint.html'">🪙 Mint</button>
+      <button onclick="window.location.href='market.html'">💎 Marketplace</button>
+      <button onclick="window.location.href='profile.html'">👤 Profile</button>
+    </div>
+  </div>
+
+  <script>
+    const app = new MiniApp();
+    app.getUser().then(user => {
+      if (user && user.username) {
+        document.querySelector('p').innerHTML = `Welcome, <b>${user.username}</b> 👋<br>Farcaster ID: ${user.fid}`;
+      }
+    });
+  </script>
+</body>
+</html>
