@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOAI Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="market.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="file_000000063387206bf18bb3201d20c8e.png" alt="BOOAI Logo" class="logo" />
+    <h1>BOOAI NFT Marketplace</h1>
+    <p>Buy, Sell, and Explore Farcaster-native NFTs</p>
+
+    <div id="walletSection">
+      <button id="connectWallet" class="btn">🔗 Connect Wallet</button>
+    </div>
+
+    <div id="marketSection" style="display:none;">
+      <button class="btn" onclick="loadNFTs()">🔄 Refresh Listings</button>
+      <div id="nftList"></div>
+    </div>
+
+    <button class="btn" onclick="window.location.href='mint.html'">🪙 Mint NFTs</button>
+    <button class="btn" onclick="window.location.href='index.html'">⬅ Back Home</button>
+  </div>
+</body>
+</html>
