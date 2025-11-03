@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mint BOOAI NFT</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@walletconnect/client@2.11.1/dist/index.min.js"></script>
+  <script src="mint.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="file_000000063387206bf18bb3201d20c8e.png" alt="BOOAI Logo" class="logo" />
+    <h1>Mint Your BOOAI NFT</h1>
+    <p>Price: <b>$2 (≈ 0.001 ETH)</b> on Base network</p>
+
+    <div id="walletSection">
+      <button id="connectWallet" class="btn">🔗 Connect Wallet</button>
+    </div>
+
+    <div id="mintSection" style="display:none;">
+      <input type="number" id="mintAmount" placeholder="Amount (max 5)" min="1" max="5" />
+      <button id="mintBtn" class="btn">🪙 Mint Now</button>
+      <p id="status"></p>
+    </div>
+
+    <button onclick="window.location.href='index.html'" class="btn">⬅ Back Home</button>
+  </div>
+</body>
+  </html>
