@@ -69,3 +69,16 @@ p {
     font-size: 0.95rem;
   }
 }
+.nft-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
